@@ -1,0 +1,98 @@
+.container{
+    text-align: center;
+}
+.maincontainer{
+    display: none;
+}
+.nhistory{
+    display: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown input[type=checkbox] {
+    display: none;
+  }
+  
+  .dropdown label {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 300;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0 !important;
+  }
+  
+  .dropdown label:after {
+    content: ' ▾';
+    padding-left: 0.3rem;
+  }
+  
+  .dropdown ul {
+    position: absolute;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    min-width: 14rem;
+    z-index: 1;
+    display: none;
+    background: white;
+    border: 0.1rem solid rgba(96, 108, 118, 0.25);
+    border-top: none;
+    border-bottom-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+  }
+  
+  nav.bar .dropdown ul {
+    margin-top: 1.4rem;
+    margin-left: -1.5rem;
+  }
+  
+  nav.bar .dropdown label {
+    padding: 0 1rem;
+  }
+  
+  .dropdown ul li {
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    margin: 0;
+  }
+  
+  .dropdown ul li:hover {
+    background: #f9f9f9;
+  }
+  
+  .dropdown ul li a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .dropdown input[type=checkbox]:checked ~ label {
+      background-color: #3D88BD; 
+  }
+  
+  .dropdown input[type=checkbox]:checked ~ ul {
+    display: block;
+  }
+
+  .button:hover,
+.button:focus,
+button:hover,
+button:focus,
+input[type='button']:hover,
+input[type='button']:focus,
+input[type='reset']:hover,
+input[type='reset']:focus,
+input[type='submit']:hover,
+input[type='submit']:focus {
+  opacity: 0.85;
+  color: white;
+  outline: 0;
+}
