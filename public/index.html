@@ -10,36 +10,34 @@
 <body>
     <div class="container">
        <div class="topcontainer">
-           <h2>generate made-up name</h2>
+           <h2>generate name with LSTM</h2>
            <div class="rules">
             <div >
               <span>start with</span>
-              <input type="text" id="startRule"/>
+              <input type="text" id="startRule" class="filter-input"/>
             </div>
             <div id="">
               <span>end with</span>
-              <input type="text" id="endRule" />
+              <input type="text" id="endRule" class="filter-input" />
             </div>
             <div id="">
               <span>include</span>
-              <input type="text" id="include" />
+              <input type="text" id="include" class="filter-input"/>
             </div>
 
            </div>
-           <button id="generateBtn">generate</button>
-            <div class="dropdown">
-                <input type="checkbox" id="ct">
-                <label class="button" for="ct">Add Rule</label>
-                <ul>
-                  <li><a id="" href="#">Start With</a></li>
-                  <li><a id="" href="#">End With</a></li>
-                  <li><a id="" href="#">Include</a></li>
-                </ul>
-              </div>        
+           <button id="generateBtn">generate</button>       
         </div>
         <div class="maincontainer">
             <h3 id="generated"></h3>
             <table id="nhistory">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
             </table>   
         </div>
     </div>

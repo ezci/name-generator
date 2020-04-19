@@ -4,9 +4,6 @@
 .maincontainer{
     display: none;
 }
-.nhistory{
-    display: none;
-}
 
 
 .dropdown {
@@ -95,4 +92,15 @@ input[type='submit']:focus {
   opacity: 0.85;
   color: white;
   outline: 0;
+}
+
+
+.rules>div {
+  display: inline-block;
+  width: 20%;
+}
+
+
+#nhistory > tbody > tr > td:nth-child(2){
+  text-align: right;
 }
