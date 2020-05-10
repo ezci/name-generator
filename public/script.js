@@ -108,9 +108,9 @@ function predictPrev(str, len){
 
 async function run() {
     // Create a simple model.
-    const model = await tf.loadLayersModel('/out_p/model.json');
+    const model = await tf.loadLayersModel('out_p/model.json');
     mymodel = model
-    const r_model = await tf.loadLayersModel('/out_r/model.json');
+    const r_model = await tf.loadLayersModel('out_r/model.json');
     myrmodel = r_model
 }
 
