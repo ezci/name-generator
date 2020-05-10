@@ -1,8 +1,6 @@
-language: node_js
-node_js:
-  - "stable"
+language: bash
 
-before_script:
+script:
   - cp index.html public/
 
 deploy:
