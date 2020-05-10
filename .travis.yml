@@ -4,9 +4,6 @@ node_js:
 
 before_script:
   - cp index.html public/
-install:
-  - cd react
-  - npm install
 
 deploy:
   provider: pages
