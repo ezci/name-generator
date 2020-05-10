@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+  - "stable"
+
+before_script:
+  - cp index.html public/
+install:
+  - cd react
+  - npm install
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  on:
+    branch: master

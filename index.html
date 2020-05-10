@@ -10,21 +10,20 @@
 <body>
     <div class="container">
        <div class="topcontainer">
-           <h2>generate name with LSTM</h2>
+           <h2>namegen</h2>
            <div class="rules">
             <div >
               <span>start with</span>
-              <input type="text" id="startRule" class="filter-input"/>
+              <input type="text" id="startRule" value="ne" placeholder="enter prefix" class="filter-input"/>
             </div>
-            <div id="">
-              <span>end with</span>
-              <input type="text" id="endRule" class="filter-input" />
-            </div>
-            <div id="">
+            <div >
               <span>include</span>
-              <input type="text" id="include" class="filter-input"/>
+              <input type="text" id="includeRule" placeholder="seperate with space" class="filter-input"/>
             </div>
-
+            <div >
+              <span>end with</span>
+              <input type="text" id="endRule" value="x" placeholder="enter postfix" class="filter-input" />
+            </div>
            </div>
            <button id="generateBtn">generate</button>       
         </div>
