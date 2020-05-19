@@ -187,6 +187,8 @@ function generate() {
 
     if($('#endRule').val()){
         pieces.push($('#endRule').val())
+    }else{
+        pieces.push(makeup(2)); //TODO what if postfix/prefix not given
     }
 
     if(pieces.length===0){
