@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css"/>
+  <link rel="stylesheet" type="text/css" href="style.css"/>  
+</head>
+<body>
+    <div class="container">
+       <div class="topcontainer">
+           <h2>namegen</h2>
+           <div class="rules">
+            <div >
+              <span>start with</span>
+              <input type="text" id="startRule" value="ne" placeholder="enter prefix" class="filter-input"/>
+            </div>
+            <div >
+              <span>include</span>
+              <input type="text" id="includeRule" placeholder="seperate with space" class="filter-input"/>
+            </div>
+            <div >
+              <span>end with</span>
+              <input type="text" id="endRule" value="x" placeholder="enter postfix" class="filter-input" />
+            </div>
+           </div>
+           <button id="generateBtn">generate</button>       
+        </div>
+        <div class="maincontainer">
+            <h3 id="generated"></h3>
+            <table id="nhistory">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>   
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
